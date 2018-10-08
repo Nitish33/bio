@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family:'Montserrat', sans-serif;
+}
+
+.parent {
+    position: relative;
+}
+.child {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.center{
+
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.link{
+    display: block;
+    background-color: black;
+    height: 40px;
+    width: 175px;
+    margin-left: 21%;
+    margin-top: 10%;
+}
+a:link, a:visited {
+    text-transform: none;
+    text-decoration: none;
+    border: solid 3px #b90524 ;
+    color: #b90524;
+    margin: 10%;
+    padding: 3% 14%;
+    margin-left: -11px;
+    margin-top: 18%;
+    border-radius: 100px;
+    font-size: 1.3em;
+    width: 282px;
+    -webkit-transition: 1s;
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    color: #b90524;
+}
+
+.name{
+    position: relative;
+    top: -0.5em;
+    left: 10%;
+    font-size: 4em;
+    width: auto;
+}
+
+.info{
+    font-size: 30px;
+    margin-bottom: 12%;
+}
+
+#text{
+    font-size: 30px;
+    text-align: center;
+}
+#typeContainer{
+    font-size: 30px;
+    display: block;
+    width: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -23px;
+    margin-bottom: 67px;
+}
+
+a:hover, a:active {
+    -webkit-transition: 1s;
+    color: #fff;
+    background-color: #b90524;
+}
+
+.icon{
+    margin-left: 34px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .name{
+        font-size: 3em;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .name{
+        font-size: 3em;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .name{
+        font-size: 2em;
+    }
+    #text{
+        font-size: 23px;
+    }
+    #typeContainer{
+        font-size: 23px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
+    
+    a:link, a:visited{
+        padding: 3% 19%;
+        margin-top: 34%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .name{
+        font-size: 2em;
+    }
+    #text{
+        font-size: 23px;
+    }
+    #typeContainer{
+        font-size: 23px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
+
+    a:link, a:visited{
+        padding: 3% 19%;
+        margin-top: 34%;
+    }
+}
+
+@media (max-width: 631px){
+    .name{
+        font-size: 2em;
+        left: 0%;
+    }
+    
+    #text{
+        font-size: 1em;
+    }
+    #typeContainer{
+        font-size: 1em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
+
+    a:link, a:visited{
+        padding: 3% 26%;
+        font-size: 1em;
+        width: 158px;
+        margin-top: 50%;
+    }
+
+    .icon {
+        margin-left: 19px;
+    }
+}
+
+@media (max-width: 568px){
+    .name{
+        font-size: 2em;
+    }
+
+    a:link, a:visited{
+        padding: 3% 26%;
+        font-size: 1em;
+        margin-top: 50%;
+
+    }
+}
+
+@media (max-width: 505px){
+    .name{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 489px){
+    .name{
+        font-size: 2em;
+    }
+
+    a:link, a:visited{
+        padding: 3% 26%;
+        margin-top: 50%;
+        width: 158px;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .name{
+        font-size: 30px;
+    }
+
+
+}
+
+@media (max-width: 410px ){
+    .name{
+        font-size: 2em;
+    }
+
+    a:link, a:visited{
+        padding: 3% 26%;
+        margin-top: 50%;
+        width: 157px;
+        font-size: 1em;
+        margin-left: -5%;
+    }
+
+}
